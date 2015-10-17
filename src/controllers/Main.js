@@ -1,2 +1,4 @@
-export default ($scope) =>
-  $scope.msg = `Hello World!`
+export default function Main () {
+  this.view = `/src/controllers/main.html`
+  this.msg = `Hello world!`
+}

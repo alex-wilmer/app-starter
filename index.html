@@ -1,7 +1,7 @@
 <html>
   <body ng-app="App">
-    <div ng-controller="Main">
-      {{ msg }}
+    <div ng-controller="Main as main">
+      <div ng-include="main.view"></div>
     </div>
     <script src="bundle.js"></script>
   </body>
