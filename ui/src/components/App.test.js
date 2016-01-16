@@ -12,16 +12,6 @@ describe(`<App />`, () => {
     let app = shallow(<App />)
     expect(app).to.exist
   })
-
-  it(`should have an empty username in state by default`, () => {
-    let app = shallow(<App />)
-    expect(app.state(`username`)).to.be.null
-  })
-
-  it(`should have an empty rooms array in state by default`, () => {
-    let app = shallow(<App />)
-    expect(app.state(`rooms`)).to.be.empty
-  })
 })
 
 /*
@@ -29,8 +19,8 @@ describe(`<App />`, () => {
  */
 
 describeWithDOM(`<App />`, () => {
-  it(`should render a form element`, () => {
+  it(`should exist`, () => {
     let app = mount(<App />)
-    expect(app.find(`form`)).to.have.length(1)
+    expect(app).to.exist
   })
 })

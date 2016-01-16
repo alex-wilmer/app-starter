@@ -29,7 +29,6 @@ module.exports = {
     root: path.resolve(__dirname),
      alias: {
        components: 'src/components',
-       games: 'src/games',
        style: 'src/style'
      },
      extensions: ['', '.js']

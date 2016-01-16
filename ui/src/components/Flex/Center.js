@@ -12,6 +12,7 @@ export default function Center ({
         display: `flex`,
         alignItems: `center`,
         justifyContent: `center`,
+        flexGrow: 1,
         ...style
       }}
     >

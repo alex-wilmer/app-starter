@@ -5,23 +5,11 @@
   "main": "app.js",
   "scripts": {
     "test": "find ./src -name '*.test.js' | xargs mocha --require babel-core/register",
-    "start": "nodemon --exec babel-node app.js"
+    "start": "nodemon --exec babel-node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alexspaceman/socket-server.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alexspaceman/socket-server/issues"
-  },
-  "homepage": "https://github.com/alexspaceman/socket-server#readme",
   "dependencies": {
     "chalk": "^1.1.1",
     "express": "^4.13.3",
-    "ramda": "^0.19.0",
-    "sentencer": "git+https://github.com/alex-wilmer/Sentencer.git#fix/module-path",
     "socket.io": "^1.3.7"
   },
   "devDependencies": {
